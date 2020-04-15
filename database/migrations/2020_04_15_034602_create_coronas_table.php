@@ -15,6 +15,9 @@ class CreateCoronasTable extends Migration
     {
         Schema::create('coronas', function (Blueprint $table) {
             $table->increments('id');
+$table->string('nama');
+$table->string('resiko');
+$table->integer('data');
             $table->timestamps();
         });
     }
